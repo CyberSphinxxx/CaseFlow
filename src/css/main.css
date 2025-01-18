@@ -58,5 +58,10 @@ button:active {
 }
 
 #output {
-
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: lightblue;
+    border-radius: 5px;
+    border: 1px solid black;
+    min-height: 50px;
 }
