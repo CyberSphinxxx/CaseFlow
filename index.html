@@ -14,24 +14,39 @@
         <p>Transform your text with ease</p>
     </header>
 
-    <div class="container">
-        <textarea id="input" placeholder="Enter Your Text Here....."></textarea>
-        <div class="buttons">
-            <button onclick="transform('sentence')">Sentence case</button>
-            <button onclick="transform('lower')">lower case</button>
-            <button onclick="transform('upper')">UPPER CASE</button>
-            <button onclick="transform('capitalized')">Capitalized Case</button>
-            <button onclick="transform('alternating')">aLtErNaTiNg cAsE</button>
-            <button onclick="transform('title')">Title Case</button>
-            <button onclick="transform('inverse')">InVeRsE CaSe</button>
-            <button onclick="downloadText()">Download Text</button>
-            <button onclick="copyToClipboard()">Copy to Clipboard</button>
-            <button onclick="clearText()">Clear</button>
-        </div>
+    <main>
+        <section class="panel text-panel">
+            <div class="text-area">
+                <label for="input">Input:</label>
+                <textarea id="input" placeholder="Enter your text here..."></textarea>
+            </div>
+            <div class="text-area">
+                <label for="output">Output:</label>
+                <div id="output"></div>
+            </div>
+        </section>
 
-        <h3>Output:</h3>
-        <div id="output"></div>
-    </div>
+        <section class="panel controls-panel">
+            <div class="buttons-container">
+                <h2>Transformations</h2>
+                <div class="button-group transform-buttons">
+                    <button onclick="transform('sentence')">Sentence case</button>
+                    <button onclick="transform('lower')">lower case</button>
+                    <button onclick="transform('upper')">UPPER CASE</button>
+                    <button onclick="transform('capitalized')">Capitalized Case</button>
+                    <button onclick="transform('alternating')">aLtErNaTiNg cAsE</button>
+                    <button onclick="transform('title')">Title Case</button>
+                    <button onclick="transform('inverse')">InVeRsE CaSe</button>
+                </div>
+                <h2>Utilities</h2>
+                <div class="button-group utility-buttons">
+                    <button onclick="downloadText()">Download Text</button>
+                    <button onclick="copyToClipboard()">Copy to Clipboard</button>
+                    <button onclick="clearText()">Clear</button>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="/src/javascript/textFormatter.js"></script>
     <script src="/src/javascript/downloadText.js"></script>
