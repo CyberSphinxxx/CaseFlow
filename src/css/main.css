@@ -32,5 +32,27 @@ textarea {
     border-radius: 5px;
     resize: vertical;
     font-size: 1rem;
-    margin-bottom: 10px;
+}
+
+/*Buttons Group*/
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+button {
+    background-color: #6e8efb;
+    color: white;
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+button:hover {
+    background-color: #5c7cfa;
+}
+button:active {
+    transform: scale(0.98);
 }
