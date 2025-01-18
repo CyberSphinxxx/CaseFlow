@@ -16,3 +16,10 @@ CaseFlow is a lightweight and efficient text transformation tool designed to sim
 - **Download Transformed Text**: Save your transformed text as a `.txt` file.
 - **Copy to Clipboard**: Quickly copy the transformed text for easy use elsewhere.
 - **Clear Text**: Reset input and output fields with a single click.
+
+## How It Works
+
+1. Enter your text in the input area.
+2. Select a trasformation button to apply a specific case
+3. View the transformed text in the ouput section.
+4. Download or Copy the text as needed.
