@@ -23,3 +23,9 @@ CaseFlow is a lightweight and efficient text transformation tool designed to sim
 2. Select a trasformation button to apply a specific case
 3. View the transformed text in the ouput section.
 4. Download or Copy the text as needed.
+
+## Technologies Used
+
+- **HTML**: Structure of the application.
+- **CSS**: Styling for an engaging and user-friendly interface.
+- **JavaScript**: Logic to handle text transformations and interactions.
