@@ -29,3 +29,12 @@ CaseFlow is a lightweight and efficient text transformation tool designed to sim
 - **HTML**: Structure of the application.
 - **CSS**: Styling for an engaging and user-friendly interface.
 - **JavaScript**: Logic to handle text transformations and interactions.
+
+## Contributing
+
+Contributions are welcome! Please feel free to fork the repository and submit pull requests for improvements.
+
+---
+
+**Project By:** [John Lemar Gonzales]
+**License:** MIT
