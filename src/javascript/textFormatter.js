@@ -24,7 +24,28 @@ function transform(type) {
         case 'inverse':
             result = input.split('').map(c => c === c.toUpperCase() ? c.toLowerCase() : c.toUpperCase()).join('');
             break;
+        case 'reverse':
+            result = input.split('').reverse().join('');
+            break;
+        case 'removeSpaces':
+            result = input.replace(/\s/g, '');
+            break;
+        case 'removeNewlines':
+            result = input.replace(/\n/g, ' ');
+            break;
+        case 'sortLines':
+            result = input.split('\n').sort().join('\n');
+            break;
+        case 'shuffleWords':
+            result = input.split(' ').sort(() => Math.random() - 0.5).join(' ');
+            break;
+        case 'rot13':
+            result = input.replace(/[a-zA-Z]/g, c => String.fromCharCode((c <= 'Z' ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26));
+            break;
     }
 
     document.getElementById('output').textContent = result;
+    showNotification('Text transformed successfully!', 'success');
 }
+
+updateCharCount();
